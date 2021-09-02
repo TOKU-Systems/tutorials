@@ -1,0 +1,32 @@
+<script src="https://cdn.jsdelivr.net/npm/mermaid@8.9.2/dist/mermaid.min.js"></script>
+
+<script>
+'use strict';
+mermaid.initialize({
+	startOnLoad: false,
+	sequence: { showSequenceNumbers: true },
+});
+
+function convertMermaidBlocks() {
+  const codeNodes = document.querySelectorAll('pre.mermaid code');
+
+  for (const codeNode of codeNodes) {
+    const divNode = document.createElement('div');
+    divNode.className = 'mermaid';
+    divNode.innerHTML = codeNode.innerHTML;
+    codeNode.parentNode.replaceWith(divNode);
+  }
+
+  mermaid.init();
+}
+
+if (document.addEventListener) {
+  document.addEventListener("DOMContentLoaded", convertMermaidBlocks);
+} else {
+  document.attachEvent("onreadystatechange", function () {
+    if (document.readyState === "interactive") {
+      convertMermaidBlocks();
+    }
+  });
+}
+</script>
