@@ -129,6 +129,7 @@ to gravity and h = height of the fluid
 
 <p align="center">
   <img width="460" height="300" src="https://o.quizlet.com/MaIx7LqHSAVPoFcPNH28ng.png">
+</p>
   
 ### Why calculate the height of the fluid?
   
