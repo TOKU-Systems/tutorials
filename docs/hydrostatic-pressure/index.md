@@ -110,7 +110,7 @@ $$
 
 Also we consider Density of the liquid which is the product of mass and volume,
 
-Density = mass*Volume
+Density = mass * Volume
 
 symbolically,
 
@@ -120,12 +120,10 @@ $$
 
 - Upon combining the above  equations, we get
 
-<p align="center">
 $$
   P = \rho g  h
-  $$
+$$
 
-</p>
 where P = pressure, r (rho) = specific gravity of the fluid, g = accelration due
 to gravity and h = height of the fluid
 
@@ -143,11 +141,11 @@ to gravity and h = height of the fluid
 
  The height can be calculated as
 
- <p align="center">
- h = P / (r * g)
- </p>
+$$
+ h = P / (\rho * g)
+$$
 
-### Specifications sheet
+### Specification sheet
 
 - At Toku systems, highest grade equipments are employed which can withstand harsh
 temperatures and weather conditions.
