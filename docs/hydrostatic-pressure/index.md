@@ -99,18 +99,19 @@ and similarly, Force is the product of mass and acceleration
 in our case, acceleration is the acceleration due to gravity i.e.,g, hence the
 equation can be modified as,
 
-1. F = mass * (acceleration due to gravity)
+ F = mass * (acceleration due to gravity)
 
-symbolically, F = m *  g and P = F / A
+symbolically,
+
+$$ math
+F = m g and P = F / A
+$$
 
 Also we consider Density of the liquid which is the product of mass and volume,
-$$
 
-1. Density = mass * Volume
+Density = mass*Volume
 
-$$
-
-*upon combining the above  equations, we get*
+- Upon combining the above  equations, we get
 
 <p align="center">
   $$ math
@@ -126,10 +127,10 @@ to gravity and h = height of the fluid
   
 ### Why calculate the height of the fluid?
   
- * If we know the specific gravity of the fluid and the pressure exerted by the liquid we can calculate the maximum height of the fluid 
+ - If we know the specific gravity of the fluid and the pressure exerted by the liquid we can calculate the maximum height of the fluid 
  that can be allowed.
 
- * We can avoid the occurence of any hazardous effects in the surroundings or to the equipment itself.
+ - We can avoid the occurence of any hazardous effects in the surroundings or to the equipment itself.
 
  The height can be calculated as
 
@@ -137,8 +138,8 @@ to gravity and h = height of the fluid
  h = P / (r * g)
  </p>
 
-## Specifications sheet
+### Specifications sheet
 
-* At Toku systems, highest grade equipments are employed which can withstand harsh temperatures and weather conditions.
+- At Toku systems, highest grade equipments are employed which can withstand harsh temperatures and weather conditions.
 
-* To access the complete list of the specifications please visit
+- To access the complete list of the specifications please visit
