@@ -91,16 +91,16 @@ fluid (at rest) at equillibrium due to force of gravity.
 
 We know that Pressure is force exerted on unit area,
 
-1. P = Force / Area
+P = Force / Area
 
 and similarly, Force is the product of mass and acceleration
 
-1. F = mass * acceleration
+F = mass * acceleration
 
 in our case, acceleration is the acceleration due to gravity i.e.,g, hence the
 equation can be modified as,
 
- F = mass * (acceleration due to gravity)
+F = mass * (acceleration due to gravity)
 
 symbolically,
 
