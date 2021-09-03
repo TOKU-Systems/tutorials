@@ -36,3 +36,6 @@ print(df_new.to_string(
 - Line 20 also has the connect string to the demo database.
 - Line 23-26 loops through each row and formats the results.
 - Finally on line 27-32 the results are printed out.
+
+This code can be accessed at
+[Git](https://github.com/TOKU-Systems/tutorials/blob/develop/docs/latest-readings/latest_readings.py)
