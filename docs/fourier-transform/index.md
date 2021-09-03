@@ -48,5 +48,4 @@ plt.show()
 - Line 35 is to print the fourier data frame
 - Line 36-40 is to plot fourier signal
 
-This code can be accessed at
-[Git](https://github.com/TOKU-Systems/tutorials/blob/develop/docs/fourier-transform/fourier_transform.py)
+[Download the code](https://github.com/TOKU-Systems/tutorials/tree/develop/docs/fourier-transform)

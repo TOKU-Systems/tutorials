@@ -72,8 +72,7 @@ finally:
 - Line 56 prints the results
 - In the end 58-60 closes the connection with the database
 
-This code can be accessed at
-[Git](https://github.com/TOKU-Systems/tutorials/blob/develop/docs/hydrostatic-pressure/hydrostatic_pressure.py)
+[Download the code](https://github.com/TOKU-Systems/tutorials/blob/develop/docs/hydrostatic-pressure/hydrostatic_pressure.py)
 
 ## Hydrostatic Pressure
 
@@ -156,4 +155,4 @@ temperatures and weather conditions.
 
 - To access the complete list of the specifications please visit
 
-[This is the link](https://tokuindustry.com/wp-content/uploads/2020/07/Specifications-July-9-2020.pdf)
+[Download the specifications](https://tokuindustry.com/wp-content/uploads/2020/07/Specifications-July-9-2020.pdf)
