@@ -40,12 +40,19 @@ plt.ylabel('f(w)')
 plt.show()
 ```
 
+- All the packages can be installed using the command
+
+```python
+pip install <package>
+```
+
 - Line 17-21 is the SQL query to run
 - Line 24 is to print the data (pressure signals)
-- Line 27- 30 is to plot the time signal
-- Line 31-32 is to perform fourier transform on the data
-- Line 33 is to create a dataframe and load the fourier transformed data
+- Line 27- 30 is to sub-plot the time signal in figure1
+- Line 32 is the spectrum i.e., the fourier transformed signal
+- Line 33 is the frequency of the corresponding point from the time domain
+- Line 34 is to create a dataframe and load the fourier transformed data
 - Line 35 is to print the fourier data frame
-- Line 36-40 is to plot fourier signal
+- Line 36-40 is to sub-plot the fourier signal in the same figure
 
 [Download the code](https://github.com/TOKU-Systems/tutorials/tree/develop/docs/fourier-transform)

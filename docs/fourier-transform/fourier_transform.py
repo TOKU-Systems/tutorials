@@ -2,9 +2,6 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from numpy import fft
-from math import floor, log10
-from datetime import datetime
-
 from pandas.core.indexes.base import Index 
 
 df = pd.read_sql('''select sd.t,sd.y
