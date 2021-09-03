@@ -79,6 +79,7 @@ fluid (at rest) at equillibrium due to force of gravity.
 
 <p align="center">
   <img width="460" height="300" src="https://media.sciencephoto.com/c0/41/57/64/c0415764-800px-wm.jpg">
+</p>
 
 ## Properties of Hydrostatic Pressure
 
@@ -103,7 +104,7 @@ equation can be modified as,
 
 symbolically,
 
-$$ math
+$$
 F = m g and P = F / A
 $$
 
@@ -111,10 +112,16 @@ Also we consider Density of the liquid which is the product of mass and volume,
 
 Density = mass*Volume
 
+symbolically,
+
+$$
+D = m / V
+$$
+
 - Upon combining the above  equations, we get
 
 <p align="center">
-  $$ math
+$$
   P = \rho g  h
   $$
 
@@ -127,10 +134,12 @@ to gravity and h = height of the fluid
   
 ### Why calculate the height of the fluid?
   
- - If we know the specific gravity of the fluid and the pressure exerted by the liquid we can calculate the maximum height of the fluid 
+ - If we know the specific gravity of the fluid and the pressure exerted by the
+ liquid we can calculate the maximum height of the fluid
  that can be allowed.
 
- - We can avoid the occurence of any hazardous effects in the surroundings or to the equipment itself.
+ - We can avoid the occurence of any hazardous effects in the surroundings or to
+ the equipment itself.
 
  The height can be calculated as
 
@@ -140,6 +149,7 @@ to gravity and h = height of the fluid
 
 ### Specifications sheet
 
-- At Toku systems, highest grade equipments are employed which can withstand harsh temperatures and weather conditions.
+- At Toku systems, highest grade equipments are employed which can withstand harsh
+temperatures and weather conditions.
 
 - To access the complete list of the specifications please visit
