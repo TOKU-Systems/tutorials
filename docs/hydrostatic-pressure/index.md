@@ -105,7 +105,9 @@ equation can be modified as,
 symbolically,
 
 $$
-F = m g and P = F / A
+F = m g
+
+ P = F / A
 $$
 
 Also we consider Density of the liquid which is the product of mass and volume,
