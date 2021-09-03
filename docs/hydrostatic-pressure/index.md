@@ -1,6 +1,6 @@
 # Hydrostatic pressure
 
-This code is used to calculate the maximum height when the hydrostatic pressure 
+This code is used to calculate the maximum height when the hydrostatic pressure
 of the fluid is known.
 
 ```python
@@ -78,7 +78,7 @@ As the name itself suggests, hydrostatic pressure is the pressure exerted by a
 fluid (at rest) at equillibrium due to force of gravity.
 
 <p align="center">
-  <img width="460" height="300" src="https://media.sciencephoto.com/c0/41/57/64/c0415764-800px-wm.jpg">
+  <img width="460" height="300" src="https://chemistrygod.com/assets/media/image/hydrostatic-pressure-a-closed-container.png">
 </p>
 
 ## Properties of Hydrostatic Pressure
