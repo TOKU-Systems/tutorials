@@ -70,7 +70,7 @@ finally:
 - Line 40-52 loops each row and appends therows to the new array, formatting
   Last-time column(locale format) and last column is the height.
 - Line 56 prints the results
-- In the end 58-60 close the connection with the database
+- In the end 58-60 closes the connection with the database
 
 ## Hydrostatic Pressure
 
@@ -113,11 +113,10 @@ $$
 *upon combining the above  equations, we get*
 
 <p align="center">
-  <span style="color:red">
   $$ math
   P = \rho g  h
-  $$ </span>
-
+  $$
+  
 </p>
 where P = pressure, r (rho) = specific gravity of the fluid, g = accelration due to gravity and h = height of the fluid 
 
