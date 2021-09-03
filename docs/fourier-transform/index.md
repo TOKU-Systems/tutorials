@@ -1,7 +1,7 @@
 # Fourier analysis on the pressure signals
 
 This is a python code to get the pressure signals in a time period of 60 minutes
-and perform fourier transform on them.Wave forms are plotted.
+and perform fourier transform on them and their respective wave forms are plotted.
 
 ```python
 import pandas as pd
