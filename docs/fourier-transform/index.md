@@ -7,43 +7,36 @@ and perform fourier transform on them and their respective wave forms are plotte
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from numpy import fft
-from math import floor, log10
-from datetime import datetime
+df = pd.read_sql(
+    '''
+    select sd.t,sd.y
+    from signal_data sd
+    where signal_id = 125 and
+    sd.t between '2021-08-30 12:00:00' and '2021-08-30 13:00:00'
+    order by sd.t
+    ''',
+    "postgresql://data_viewer:tokuapidemosystems@apidemo.tokusystems.com/tsdb")
 
-from pandas.core.indexes.base import Index 
-
-df = pd.read_sql('''
-select sd.t,sd.y
-from signal_data sd 
-where signal_id = 125 and sd.t between '2021-08-30 12:00:00' and '2021-08-30 13:00:00'
-order by sd.t
- ''', "postgresql://data_viewer:tokuapidemosystems@apidemo.tokusystems.com/tsdb")
-
-df_new = df.set_axis(['Last time','Amplitude'], axis=1, inplace=False)
+df_new = df.set_axis(['Last time', 'Amplitude'], axis=1, inplace=False)
 print(df_new)
 
 plt.subplot(1, 2, 1)
-plt.plot('Last time','Amplitude',data=df_new)
+plt.plot('Last time', 'Amplitude', data=df_new)
 plt.title('Time signal')
 plt.xlabel('time')
 plt.ylabel('Amplitude')
 plt.subplot(1, 2, 2)
 sp1 = np.fft.fft(df_new['Amplitude'])
 freq1 = np.fft.fftfreq(df_new['Last time'].shape[-1])
-fourier_signal=pd.DataFrame(dict(frequency = freq1, spectrum = sp1)).reset_index()
+fourier_signal = pd.DataFrame(dict(
+    frequency=freq1, spectrum=sp1)).reset_index()
 print(fourier_signal)
 plt.plot(freq1, sp1.real, freq1, sp1.imag)
 plt.title('fourier signal')
 plt.xlabel('w')
 plt.ylabel('f(w)')
 plt.show()
-```
 
-- All the packages can be installed using the command
-
-```python
-pip install <package>
 ```
 
 - Line 17-21 is the SQL query to run
@@ -55,4 +48,6 @@ pip install <package>
 - Line 35 is to print the fourier data frame
 - Line 36-40 is to sub-plot the fourier signal in the same figure
 
-[Download the code](https://github.com/TOKU-Systems/tutorials/tree/develop/docs/fourier-transform)
+[View on Github](https://github.com/TOKU-Systems/tutorials/tree/develop/docs/fourier-transform)
+
+An example plot is given below

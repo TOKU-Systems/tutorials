@@ -1,9 +1,10 @@
-# Latest readings
-
-Below is an example in python to query for all latest readings.
-
-```python
 import pandas as pd
+
+
+def height_calculation(pressure, acceleration_due_to_gravity, specific_gravity):
+    height = pressure/(acceleration_due_to_gravity * specific_gravity)
+    return height
+
 
 df = pd.read_sql(
     '''
@@ -17,29 +18,26 @@ df = pd.read_sql(
         WHERE x.signal_id = s.id
         ORDER BY x.t DESC
         LIMIT 1
-        ) sd ON true
+        ) sd ON true where s.name='Pressure' 
     ''',
     "postgresql://data_viewer:tokuapidemosystems@apidemo.tokusystems.com/tsdb")
+
 df_new = df.set_axis([
     'Asset name',
     'Hardpoint',
     'Signal name',
     'Last time',
-    'Last reading'], axis=1, inplace=False)
+    'Height'], axis=1, inplace=False)
+print('Enter the specific gravity of the liquid in kg/m3: ')
+user_input_specific_gravity = float(input())
+g = 9.81
+df_new['Height'] = df_new['Height']/(user_input_specific_gravity * g)
 for index, row in df_new.iterrows():
-    df_new.iloc[index, [4]] = row['Last reading']
+    df_new.iloc[index, [4]] = row['Height']
     df_new.iloc[index, [3]] = pd.to_datetime(row['Last time'])
 
 print(df_new.to_string(
     formatters={
         'Last time': lambda x: f'{pd.to_datetime(x,unit="D"):%X}',
-        'Last reading': lambda x: f'{x:.5g}'
+        'Height': lambda x: f'{x:.5g}'
     }))
-```
-
-- Line 8-20 is the SQL query to run
-- Line 20 also has the connect string to the demo database.
-- Line 23-26 loops through each row and formats the results.
-- Finally on line 27-32 the results are printed out.
-
-[View on Github](https://github.com/TOKU-Systems/tutorials/blob/develop/docs/latest-readings/latest_readings.py)
