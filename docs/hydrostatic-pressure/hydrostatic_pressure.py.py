@@ -1,11 +1,6 @@
 import pandas as pd
 
 
-def height_calculation(pressure, acceleration_due_to_gravity, specific_gravity):
-    height = pressure/(acceleration_due_to_gravity * specific_gravity)
-    return height
-
-
 df = pd.read_sql(
     '''
     SELECT a.name, h.name, s.name, sd.t, sd.y
