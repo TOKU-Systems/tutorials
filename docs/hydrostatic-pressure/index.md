@@ -76,17 +76,21 @@ fluid (at rest) at equillibrium due to force of gravity.
 
 We know that Pressure is force exerted on unit area,
 
-$P = \frac{\text{Force}}{\text{Area}}$
+$$
+P = \frac{\text{Force}}{\text{Area}}
+$$
 
 and similarly, Force is the product of mass and acceleration
 
-$F = mass * Acceleration$
+$$
+F = mass \times acceleration
+$$
 
 in our case, acceleration is the acceleration due to gravity i.e.,g, hence the
 equation can be modified as,
 
 $$
-F = mass * (acceleration\ due\ to\ gravity)
+F = mass \times \text{(acceleration due to gravity)}
 $$
 
 symbolically,
@@ -101,7 +105,9 @@ $$
 
 Also we consider Density of the liquid which is the product of mass and volume,
 
-$Density = mass * Volume$
+$$
+\text{Density} = \frac{\text{mass}}{\text{Volume}}
+$$
 
 symbolically,
 
@@ -117,13 +123,14 @@ $$
 
 Where
 
-$P = pressure$
-
-$\rho = specific\ gravity \ of \ the \ fluid$
-
-$g = acceleration\ due\ to\ gravity$
-
-$h = height\ of\ the\ fluid$
+$$
+\begin{align}
+P &= \text{pressure} \\
+\rho &= \text{specific gravity of the fluid} \\
+g &=  \text{acceleration due to gravity} \\
+h &=  \text{height of the fluid}
+\end{align}
+$$
 
 <p align="center">
   <img width="460" height="300" src="https://o.quizlet.com/MaIx7LqHSAVPoFcPNH28ng.png">
@@ -141,7 +148,7 @@ $h = height\ of\ the\ fluid$
  The height can be calculated as
 
 $$
- h = P / (\rho * g)
+ h = P / (\rho \times g)
 $$
 
 ### Specification sheet

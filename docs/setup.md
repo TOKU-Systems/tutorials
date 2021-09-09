@@ -8,38 +8,38 @@ To install on macOS, follow these steps
 
 1. Install [Homebrew](https://brew.sh/)
 
-- This acts as a missing package manager for macOS.
+    - It acts as a missing package manager for macOS.
 
 1. Install [python3](https://formulae.brew.sh/formula/python@3.9)
 
 1. Setup [pyenv](https://github.com/pyenv/pyenv)
 
-- Lets you alternate between various versions of python.
+    - It enables you alternate between various versions of python.
 
 ### Getting files from Git
 
 1. Clone the repository 'tutorials' from [Github](https://github.com/TOKU-Systems/tutorials)
 
-```sh
-git clone <repo>
-```
+    ```sh
+    git clone https://github.com/TOKU-Systems/tutorials.git
+    ```
 
-- there are three ways to clone a repository,
-    - copying HTTPS
-    - copying SSH
-    - downloading the zip
+    - There are three ways to clone a repository,
+        - Copying HTTPS
+        - Copying SSH
+        - Downloading the zip
 
 1. Change the working directory to the path of the file that is to be executed.
 
-- For example, consider hydrostatic pressure file
+    - For example, consider hydrostatic pressure file
 
-`cd tutorials/docs/hydrostatic-pressure`
+    `cd tutorials/docs/hydrostatic-pressure`
 
 1. Run the file.
 
-`python hydrostatic_pressure .py`
+    `python hydrostatic_pressure .py`
 
-1. view the results.
+1. View the results.
 
 ### To access the documentation
 
@@ -49,14 +49,14 @@ documentation on Bitbucket.
 ### Optional tools
 
 - Install [pgadmin](https://www.pgadmin.org/download/)
-    - A GUI tool used to link (remote and locally) to Postgres database
+    - It is a GUI tool used to link (remote and locally) to Postgres database
         - Select tsdb (working database)
         - Can use it to view tables and write new SQL queries and analyse the results.
 
-- Install [vscode-editor](https://code.visualstudio.com/download)
-    - An editor used to make alterations in the code and modify it.
-        - Open tutorials folder
-        - create virtual environemnt using.
+- Install [visual studio code editor](https://code.visualstudio.com/download)
+    - It is an editor used to make alterations in the code and modify it.
+        - Open tutorials folder.
+        - Create virtual environemnt using
 
         ```sh
         python -m venv .venv
@@ -68,7 +68,7 @@ documentation on Bitbucket.
         source .venv/bin/activate
         ```
 
-        - install the requirements.
+        - Install the requirements.
 
         ```sh
         pip install -r requirements.txt
