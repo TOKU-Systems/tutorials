@@ -53,5 +53,5 @@ plt.show()
 An example plot is given below
 
 <p align="center">
-  <img width="460" height="300" src="https://raw.githubusercontent.com/TOKU-Systems/tutorials/content-add/docs/pic/Figure_1.png">
+  <img width="460" height="300" src="https://raw.githubusercontent.com/TOKU-Systems/tutorials/content-add/docs/pic/Figure.png">
 </p>
