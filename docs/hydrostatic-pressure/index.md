@@ -4,22 +4,11 @@ This code is used to calculate the maximum height when the hydrostatic pressure
 of the fluid is known.
 
 ```python
-import psycopg2
-from math import log10, floor
-from tabulate import tabulate
-import datetime 
+import pandas as pd
 
-def round_sig(x, sig=5):
-    return round(x, sig-int(floor(log10(abs(x))))-1)
 
-def height_calculation(pressure, acceleration_due_to_gravity, specific_gravity):
-    height = pressure/(acceleration_due_to_gravity * specific_gravity)
-    return height
-
-try:
-    conn = psycopg2.connect(host="apidemo.tokusystems.com",port="5432",dbname="tsdb",user="data_viewer",password="tokuapidemosystems")
-    cur = conn.cursor()
-    cur.execute('''
+df = pd.read_sql(
+    '''
     SELECT a.name, h.name, s.name, sd.t, sd.y
     FROM assets a
     JOIN hardpoints h ON a.id = h.asset_id
@@ -30,36 +19,30 @@ try:
         WHERE x.signal_id = s.id
         ORDER BY x.t DESC
         LIMIT 1
-    ) sd ON true 
-    where s.name='Pressure' 
-    ''')
-    query_results = cur.fetchall()
-    print('Enter the specific gravity of the liquid in kg/m3: ')
-    user_inputted_specific_gravity = float(input())
-    g = 9.81
-    formatted_results = []
-    for row in query_results:
-        newRow = []
-        for value in row:
-        
-            height = 0.0
-            if isinstance(value,float)and value!= 0.0 : 
-                height = height_calculation(value, g, user_inputted_specific_gravity)    
-                newRow.append(round_sig(height,5)) 
-            elif isinstance(value,datetime.datetime):
-                newRow.append( value.strftime('%c'))
+        ) sd ON true where s.name='Pressure' 
+    ''',
+    "postgresql://data_viewer:tokuapidemosystems@apidemo.tokusystems.com/tsdb")
 
-            else:
-                newRow.append(value)
-        
-        formatted_results.append(newRow)
+df_new = df.set_axis([
+    'Asset name',
+    'Hardpoint',
+    'Signal name',
+    'Last time',
+    'Height'], axis=1, inplace=False)
+print('Enter the specific gravity of the liquid in kg/m3: ')
+user_input_specific_gravity = float(input())
+g = 9.81
+df_new['Height'] = df_new['Height']/(user_input_specific_gravity * g)
+for index, row in df_new.iterrows():
+    df_new.iloc[index, [4]] = row['Height']
+    df_new.iloc[index, [3]] = pd.to_datetime(row['Last time'])
 
-    print(tabulate(formatted_results,headers=["Asset name","Hardpoint", "Signal name","Last Time","Last Height"]))
-       
-finally:    
-    cur.close()
-    conn.close()
-    
+print(df_new.to_string(
+    formatters={
+        'Last time': lambda x: f'{pd.to_datetime(x,unit="D"):%X}',
+        'Height': lambda x: f'{x:.5g}'
+    }))
+
 ```
 
 - Line 11-12 is a function to get five significant figures
@@ -68,9 +51,11 @@ finally:
 - Line 22-34 is the SQL query to run
 - Line 34-35 take dynamic input of prssure
 - Line 40-52 loops each row and appends therows to the new array, formatting
-  Last-time column(locale format) and last column is the height.
+  Last-time column(locale format) and the last column is the height.
 - Line 56 prints the results
 - In the end 58-60 closes the connection with the database
+
+[View on Github.com](https://github.com/TOKU-Systems/tutorials/blob/develop/docs/hydrostatic-pressure/hydrostatic_pressure.py)
 
 ## Hydrostatic Pressure
 
@@ -91,26 +76,38 @@ fluid (at rest) at equillibrium due to force of gravity.
 
 We know that Pressure is force exerted on unit area,
 
-P = Force / Area
+$$
+P = \frac{\text{Force}}{\text{Area}}
+$$
 
 and similarly, Force is the product of mass and acceleration
 
-F = mass * acceleration
+$$
+F = mass \times acceleration
+$$
 
 in our case, acceleration is the acceleration due to gravity i.e.,g, hence the
 equation can be modified as,
 
-F = mass * (acceleration due to gravity)
+$$
+F = mass \times \text{(acceleration due to gravity)}
+$$
 
 symbolically,
 
 $$
-F = m g , P = F / A
+F = m g
+$$
+
+$$
+P = F / A
 $$
 
 Also we consider Density of the liquid which is the product of mass and volume,
 
-Density = mass * Volume
+$$
+\text{Density} = \frac{\text{mass}}{\text{Volume}}
+$$
 
 symbolically,
 
@@ -124,8 +121,16 @@ $$
   P = \rho g  h
 $$
 
-where P = pressure, r (rho) = specific gravity of the fluid, g = accelration due
-to gravity and h = height of the fluid
+Where
+
+$$
+\begin{align}
+P &= \text{pressure} \\
+\rho &= \text{specific gravity of the fluid} \\
+g &=  \text{acceleration due to gravity} \\
+h &=  \text{height of the fluid}
+\end{align}
+$$
 
 <p align="center">
   <img width="460" height="300" src="https://o.quizlet.com/MaIx7LqHSAVPoFcPNH28ng.png">
@@ -143,12 +148,14 @@ to gravity and h = height of the fluid
  The height can be calculated as
 
 $$
- h = P / (\rho * g)
+ h = P / (\rho \times g)
 $$
 
 ### Specification sheet
 
-- At Toku systems, highest grade equipments are employed which can withstand harsh
+- At TOKU Systems, highest grade equipments are employed which can withstand harsh
 temperatures and weather conditions.
 
 - To access the complete list of the specifications please visit
+
+[Download the specifications](https://tokuindustry.com/wp-content/uploads/2020/07/Specifications-July-9-2020.pdf)
