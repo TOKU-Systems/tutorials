@@ -48,7 +48,7 @@ plt.show()
 - Line 35 is to print the fourier data frame
 - Line 36-40 is to sub-plot the fourier signal in the same figure
 
-[View on Github](https://github.com/TOKU-Systems/tutorials/tree/develop/docs/fourier-transform)
+[View on GitHub](https://github.com/TOKU-Systems/tutorials/tree/develop/docs/fourier-transform)
 
 An example plot is given below
 

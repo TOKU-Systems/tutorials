@@ -8,17 +8,17 @@ To install on macOS, follow these steps
 
 1. Install [Homebrew](https://brew.sh/)
 
-    - It acts as a missing package manager for macOS.
+    - It acts as a package manager for macOS.
 
-1. Install [python3](https://formulae.brew.sh/formula/python@3.9)
+1. Using Homebrew, install [python3](https://formulae.brew.sh/formula/python@3.9)
 
-1. Setup [pyenv](https://github.com/pyenv/pyenv)
+1. Using Homebrew, setup [pyenv](https://github.com/pyenv/pyenv)
 
     - It enables you alternate between various versions of python.
 
 ### Getting files from Git
 
-1. Clone the repository 'tutorials' from [Github](https://github.com/TOKU-Systems/tutorials)
+1. Clone the repository 'tutorials' from [GitHub](https://github.com/TOKU-Systems/tutorials)
 
     ```sh
     git clone https://github.com/TOKU-Systems/tutorials.git
@@ -33,27 +33,23 @@ To install on macOS, follow these steps
 
     - For example, consider hydrostatic pressure file
 
-    `cd tutorials/docs/hydrostatic-pressure`
+        `cd tutorials/docs/hydrostatic-pressure`
 
 1. Run the file.
 
-    `python hydrostatic_pressure .py`
+    `python hydrostatic_pressure.py`
 
-1. View the results.
+1. Here is a sample output given below.
 
-### To access the documentation
-
-- Follow the steps in the README.md file to open the mkdocs server and view the
-documentation on Bitbucket.
 
 ### Optional tools
 
-- Install [pgadmin](https://www.pgadmin.org/download/)
-    - It is a GUI tool used to link (remote and locally) to Postgres database
+1. Install [pgadmin](https://www.pgadmin.org/download/)
+    - It is a GUI tool used to link (remote and locally) to PostgreSQL database
         - Select tsdb (working database)
         - Can use it to view tables and write new SQL queries and analyse the results.
 
-- Install [visual studio code editor](https://code.visualstudio.com/download)
+1. Install [Visual Studio Code editor](https://code.visualstudio.com/download)
     - It is an editor used to make alterations in the code and modify it.
         - Open tutorials folder.
         - Create virtual environemnt using

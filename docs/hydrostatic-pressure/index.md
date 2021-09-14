@@ -55,7 +55,7 @@ print(df_new.to_string(
 - Line 56 prints the results
 - In the end 58-60 closes the connection with the database
 
-[View on Github.com](https://github.com/TOKU-Systems/tutorials/blob/develop/docs/hydrostatic-pressure/hydrostatic_pressure.py)
+[View on GitHub.com](https://github.com/TOKU-Systems/tutorials/blob/develop/docs/hydrostatic-pressure/hydrostatic_pressure.py)
 
 ## Hydrostatic Pressure
 
@@ -83,14 +83,14 @@ $$
 and similarly, Force is the product of mass and acceleration
 
 $$
-F = mass \times acceleration
+F = \text{mass} \times \text{acceleration}
 $$
 
 in our case, acceleration is the acceleration due to gravity i.e.,g, hence the
 equation can be modified as,
 
 $$
-F = mass \times \text{(acceleration due to gravity)}
+F = \text{mass} \times \text{(acceleration due to gravity)}
 $$
 
 symbolically,
@@ -142,10 +142,9 @@ $$
  liquid we can calculate the maximum height of the fluid
  that can be allowed.
 
- - We can avoid the occurence of any hazardous effects in the surroundings or to
- the equipment itself.
+ - Prevent overflow (or underflow) of the fluid.
 
- The height can be calculated as
+ The height can be calculated as:
 
 $$
  h = P / (\rho \times g)
