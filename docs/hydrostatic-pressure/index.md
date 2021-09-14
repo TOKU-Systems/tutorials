@@ -55,7 +55,12 @@ print(df_new.to_string(
 - Line 56 prints the results
 - In the end 58-60 closes the connection with the database
 
+<<<<<<< Updated upstream
 [View on GitHub.com](https://github.com/TOKU-Systems/tutorials/blob/develop/docs/hydrostatic-pressure/hydrostatic_pressure.py)
+=======
+To access this file, please visit
+[Git](https://github.com/TOKU-Systems/tutorials/blob/develop/docs/hydrostatic-pressure/hydrostatic_pressure.py)
+>>>>>>> Stashed changes
 
 ## Hydrostatic Pressure
 
@@ -156,5 +161,9 @@ $$
 temperatures and weather conditions.
 
 - To access the complete list of the specifications please visit
+<<<<<<< Updated upstream
 
 [Download the specifications](https://tokuindustry.com/wp-content/uploads/2020/07/Specifications-July-9-2020.pdf)
+=======
+[This link](https://tokuindustry.com/wp-content/uploads/2020/07/Specifications-July-9-2020.pdf)
+>>>>>>> Stashed changes
