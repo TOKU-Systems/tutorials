@@ -2,9 +2,9 @@
 
 To try the tutorials yourself, please setup your development environment as follows.
 
-## macOS
+## Mac OS
 
-To install on macOS, follow these steps
+To install on MacOS, follow these steps
 
 1. Install [Homebrew](https://brew.sh/)
 
