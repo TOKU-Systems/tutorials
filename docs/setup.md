@@ -39,9 +39,11 @@ To install on macOS, follow these steps
 
     `python hydrostatic_pressure.py`
 
-1. Here is a sample output given below.
+1. The example should print results similar to the following
 
-
+<p align="center">
+  <img width="460" height="300" src="https://raw.githubusercontent.com/TOKU-Systems/tutorials/feature/new-changes/docs/pic/Screen%20Shot%202021-09-14%20at%208.01.22%20AM.png">
+</p>
 ### Optional tools
 
 1. Install [pgadmin](https://www.pgadmin.org/download/)
