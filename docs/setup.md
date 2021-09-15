@@ -33,7 +33,7 @@ To install on macOS, follow these steps
 
     - For example, consider hydrostatic pressure file
 
-        `cd tutorials/docs/hydrostatic-pressure`
+        `cd tutorials/docs/hydrostatic-pressure/hydrostatic_pressure.py`
 
 1. Run the file.
 
@@ -54,24 +54,5 @@ To install on macOS, follow these steps
 1. Install [Visual Studio Code editor](https://code.visualstudio.com/download)
     - It is an editor used to make alterations in the code and modify it.
         - Open tutorials folder.
-        - Create virtual environemnt using
-
-        ```sh
-        python -m venv .venv
-        ```
-
-        - Activate the environment.
-
-        ```sh
-        source .venv/bin/activate
-        ```
-
-        - Install the requirements.
-
-        ```sh
-        pip install -r requirements.txt
-        ```
-
         - Run the file.
-
         - View the results in the terminal.

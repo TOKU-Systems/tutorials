@@ -13,6 +13,12 @@ Tutorials on using TOKU Systems API-SQL to work with data from IIoT sensors
 	pyenv install
 	```
 
+1.	Clone the tutorials repository
+
+	```bash
+	git clone https://github.com/TOKU-Systems/tutorials.git
+	```
+
 1. Setup [venv](https://docs.python.org/3/library/venv.html).
 
 	```bash

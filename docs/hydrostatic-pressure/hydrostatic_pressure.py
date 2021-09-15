@@ -13,7 +13,7 @@ df = pd.read_sql(
         WHERE x.signal_id = s.id
         ORDER BY x.t DESC
         LIMIT 1
-        ) sd ON true where s.name='Pressure' 
+        ) sd ON true where s.name='Pressure'
     ''',
     "postgresql://data_viewer:tokuapidemosystems@apidemo.tokusystems.com/tsdb")
 
