@@ -46,7 +46,6 @@ plt.show()
 - Line 33 is the frequency of the corresponding point from the time domain
 - Line 34 is to create a dataframe and load the fourier transformed data
 - Line 35 is to print the fourier data frame
-<<<<<<< Updated upstream
 - Line 36-40 is to sub-plot the fourier signal in the same figure
 
 [View on GitHub](https://github.com/TOKU-Systems/tutorials/tree/develop/docs/fourier-transform)
@@ -56,9 +55,3 @@ An example plot is given below
 <p align="center">
   <img width="460" height="300" src="https://raw.githubusercontent.com/TOKU-Systems/tutorials/content-add/docs/pic/Figure.png">
 </p>
-=======
-- Line 36-40 is to plot fourier signal
-
-To access this file, please visit
-[Git](https://github.com/TOKU-Systems/tutorials/blob/develop/docs/fourier-transform/fourier_transform.py)
->>>>>>> Stashed changes
