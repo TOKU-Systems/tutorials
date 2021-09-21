@@ -29,11 +29,30 @@ To install on MacOS, follow these steps
         - Copying SSH
         - Downloading the zip
 
+    - Open tutorials folder.
+        - Create virtual environemnt using
+
+            ```sh
+            python -m venv .venv
+            ```
+
+        - Activate the environment.
+
+            ```sh
+            source .venv/bin/activate
+            ```
+
+        - Install the requirements.
+
+            ```sh
+            pip install -r requirements.txt
+            ```
+
 1. Change the working directory to the path of the file that is to be executed.
 
     - For example, consider hydrostatic pressure file
 
-    `cd tutorials/docs/hydrostatic-pressure`
+        `cd tutorials/docs/hydrostatic-pressure`
 
 1. Run the file.
 
@@ -55,25 +74,4 @@ documentation on Bitbucket.
 
 - Install [visual studio code editor](https://code.visualstudio.com/download)
     - It is an editor used to make alterations in the code and modify it.
-        - Open tutorials folder.
-        - Create virtual environemnt using
 
-        ```sh
-        python -m venv .venv
-        ```
-
-        - Activate the environment.
-
-        ```sh
-        source .venv/bin/activate
-        ```
-
-        - Install the requirements.
-
-        ```sh
-        pip install -r requirements.txt
-        ```
-
-        - Run the file.
-
-        - View the results in the terminal.
