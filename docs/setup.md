@@ -12,7 +12,10 @@ To install on MacOS, follow these steps
 
 1. Using Homebrew, install [python3](https://formulae.brew.sh/formula/python@3.9)
 
-1. Using Homebrew, install [Git](https://www.atlassian.com/git/tutorials/install-git)
+1. Check if Git is already installed on the mac [Check-Git-installation](https://github.com/git-guides/install-git)
+
+- If Git is not pre-installed, using using Homebrew,
+install [Git](https://www.atlassian.com/git/tutorials/install-git)
 
 1. Using Homebrew, setup [pyenv](https://github.com/pyenv/pyenv)
 

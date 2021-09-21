@@ -2,15 +2,6 @@
 
 Tutorials on using TOKU System's API-SQL to work with data from IIoT sensors.
 
-## Specification sheet
-
-- At TOKU Systems, highest grade equipments are employed which can withstand harsh
-temperatures and weather conditions.
-
-- To access the complete list of the specifications please visit
-
-[Download the specifications](https://tokuindustry.com/wp-content/uploads/2020/07/Specifications-July-9-2020.pdf)
-
 - [Getting started](setup/)
 - [Latest readings](latest-readings/)
 - [Hydrostatic pressure](hydrostatic-pressure/)
@@ -34,7 +25,6 @@ with the device called 'TOKU talk' and thier own cloud platform.
 <p align="center">
   <img width="300" height="300" src="https://i1.wp.com/www.tokusystems.com/wp-content/uploads/2021/05/1.-Product-no-background-cropped.png?resize=2048%2C944&ssl=1">
 </p>
-
 
 ## Specification sheet
 
