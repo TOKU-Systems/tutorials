@@ -7,6 +7,9 @@ which is as tall as a mini waterbottle with easy installation steps.
   <img width="300" height="350" src="https://i2.wp.com/www.tokusystems.com/wp-content/uploads/2021/01/T1000-1-e1611961647472.png?w=680&ssl=1">
 </p>
 
+- It can be used to replace the huge installations of similar systmes like SCADA
+and cut the costs of  the labour involved in maintainence.
+
 - It is equipped with sensors that detect unusual readings, sends out a an alarm
 and notifies via SMS and email.
 
