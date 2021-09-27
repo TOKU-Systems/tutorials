@@ -14,7 +14,7 @@ df = pd.read_sql(
         LIMIT 1
         ) sd ON true
     ''',
-    "postgresql://data_viewer:tokuapidemosystems@apidemo.tokusystems.com/tsdb")
+    "postgresql://data_viewer:tokuapidemosystems@apidemo.tokusystems.com/new_mareland")
 df_new = df.set_axis([
     'Asset name',
     'Hardpoint',
