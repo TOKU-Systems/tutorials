@@ -12,7 +12,10 @@ To install on MacOS, follow these steps
 
 1. Using Homebrew, install [python3](https://formulae.brew.sh/formula/python@3.9)
 
-1. using Homebrew, install [Git](https://www.atlassian.com/git/tutorials/install-git)
+1. Check if Git is already installed on the mac [Check-Git-installation](https://github.com/git-guides/install-git)
+
+    - If it is not installed, use Homebrew to
+    install [Git](https://www.atlassian.com/git/tutorials/install-git)
 
 1. Using Homebrew, setup [pyenv](https://github.com/pyenv/pyenv)
 
@@ -31,11 +34,31 @@ To install on MacOS, follow these steps
         - Copying SSH
         - Downloading the zip
 
-1. Change the working directory to the path of the file that is to be executed.
+1. Change the working directory to the tutorials folder.
 
-    - For example, consider hydrostatic pressure file
+1. Create a virtual environment.
 
-        `cd tutorials/docs/hydrostatic-pressure/hydrostatic_pressure.py`
+    ```sh
+    python -m venv .venv
+    ```
+
+1. Activate the environment.
+
+    ```sh
+    source .venv/bin/activate
+    ```
+
+1. Install the requirements.
+
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+1. Navigate to the file that is to be executed.
+
+- For example, consider hydrostatic pressure file
+
+    `cd tutorials/docs/hydrostatic-pressure/hydrostatic_pressure.py`
 
 1. Run the file.
 
@@ -46,6 +69,7 @@ To install on MacOS, follow these steps
 <p align="center">
   <img width="460" height="300" src="https://raw.githubusercontent.com/TOKU-Systems/tutorials/feature/new-changes/docs/pic/Screen%20Shot%202021-09-14%20at%208.01.22%20AM.png">
 </p>
+
 ### Optional tools
 
 1. Install [pgadmin](https://www.pgadmin.org/download/)
