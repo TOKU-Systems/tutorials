@@ -14,7 +14,7 @@ To install on MacOS, follow these steps
 
 1. Check if Git is already installed on the mac [Check-Git-installation](https://github.com/git-guides/install-git)
 
-    - If it is not pre-installed, using Homebrew,
+    - If it is not installed, use Homebrew to
     install [Git](https://www.atlassian.com/git/tutorials/install-git)
 
 1. Using Homebrew, setup [pyenv](https://github.com/pyenv/pyenv)
