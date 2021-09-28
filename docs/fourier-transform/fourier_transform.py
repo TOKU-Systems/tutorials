@@ -10,7 +10,7 @@ df = pd.read_sql(
     sd.t between '2021-08-30 12:00:00' and '2021-08-30 13:00:00'
     order by sd.t
     ''',
-    "postgresql://data_viewer:tokuapidemosystems@apidemo.tokusystems.com/tsdb")
+    "postgresql://data_viewer:tokuapidemosystems@apidemo.tokusystems.com/new_mareland")
 
 df_new = df.set_axis(['Last time', 'Amplitude'], axis=1, inplace=False)
 print(df_new)
