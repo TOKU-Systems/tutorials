@@ -37,9 +37,9 @@ print(df_new.to_string(
     }))
 ```
 
-- Line 8-20 is the SQL query to run
-- Line 20 also has the connect string to the demo database.
-- Line 23-26 loops through each row and formats the results.
-- Finally on line 27-32 the results are printed out.
+- Line 8-20 is the SQL query to run.
+- Line 22 also has the connect string to the demo database.
+- Line 23-28 prints the dataframe with a header consisting the column names.
+- Line 29-37 loops through each row and prints the formatted results.
 
 [View on GitHub](https://github.com/TOKU-Systems/tutorials/blob/develop/docs/latest-readings/latest_readings.py)

@@ -1,7 +1,7 @@
 # Fourier analysis on the pressure signals
 
 This is a python code to get the pressure signals in a time period of 60 minutes
-and perform fourier transform on them and their respective wave forms are plotted.
+and perform fourier transform on them and view their respective wave forms.
 
 ```python
 import pandas as pd
@@ -36,17 +36,14 @@ plt.title('fourier signal')
 plt.xlabel('w')
 plt.ylabel('f(w)')
 plt.show()
-
 ```
 
-- Line 17-21 is the SQL query to run
-- Line 24 is to print the data (pressure signals)
-- Line 27- 30 is to sub-plot the time signal in figure1
-- Line 32 is the spectrum i.e., the fourier transformed signal
-- Line 33 is the frequency of the corresponding point from the time domain
-- Line 34 is to create a dataframe and load the fourier transformed data
-- Line 35 is to print the fourier data frame
-- Line 36-40 is to sub-plot the fourier signal in the same figure
+- Line 11-17 is the SQL query to run.
+- Line 20 is to print the data (pressure signals) with a header.
+- Line 23-27 is to sub-plot the time signal in figure1.
+- Line 29-33 is the the fourier transforme of the time signal.
+- Line 33 prints the values of the fourier transform.
+- Line 34-38 subplots the fourier transformed signal in the same figure.
 
 [View on GitHub](https://github.com/TOKU-Systems/tutorials/tree/develop/docs/fourier-transform)
 
