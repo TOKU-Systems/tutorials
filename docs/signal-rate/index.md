@@ -1,6 +1,6 @@
 # Signal rate
 
-Below is an example in python to get the rate of signal for all pressure signals.
+Below is an example in python to get the rate of signal with respect to time for all pressure signals.
 
 ```python
 import pandas as pd
@@ -34,13 +34,14 @@ output = output.set_axis(['Signal Rate'], axis=1, inplace=False)
 print(output)
 ```
 
-- Line 8-15 is the SQL query to run
-- Line 16 also has the connect string to the demo database
-- Line 21 creates an empty list.
-- Line 23-30 loops through each row and formats the results and adds it into
-    the list.
-- Line 32 loads the values onto a dataframe.
-- Line 33 uses a heaader to name the column.
-- Finally on line 34 the results are printed out.
+- Line 3-10 is the SQL query to run
+- Line 11 also has the connect string to the demo database.
+- Line 14 converts time into seconds.
+- Line 16 creates an empty list.
+- Line 18-25 loops through each row and formats the results and adds it into
+the list.
+- Line 26 loads the values onto a dataframe.
+- Line 28  uses a heaader to name the column.
+- Finally on line 29 the results are printed out.
 
 [View on GitHub](https://github.com/TOKU-Systems/tutorials/blob/develop/docs/signal-rate/signal_rate.py)

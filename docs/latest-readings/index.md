@@ -37,9 +37,11 @@ print(df_new.to_string(
     }))
 ```
 
-- Line 8-20 is the SQL query to run.
-- Line 22 also has the connect string to the demo database.
-- Line 23-28 prints the dataframe with a header consisting the column names.
-- Line 29-37 loops through each row and prints the formatted results.
+- Line 3-16 is the SQL query to run.
+- Line 17 also has the connect string to the demo database.
+- Line 18-23 prints the dataframe with a header consisting the column names.
+- Line 24-26 iterates through each row and locates the columns that need to be formatted.
+- Line 28-32 prints the time column formatted in locale and readings formatted
+to five significant digits.
 
 [View on GitHub](https://github.com/TOKU-Systems/tutorials/blob/develop/docs/latest-readings/latest_readings.py)
