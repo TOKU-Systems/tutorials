@@ -45,15 +45,16 @@ print(df_new.to_string(
 
 ```
 
-- Line 11-12 is a function to get five significant figures
-- Line 13-16 is a function to get the height
-- Line 19 - 21 is to make a connection with the demo database
-- Line 22-34 is the SQL query to run
-- Line 34-35 take dynamic input of prssure
-- Line 40-52 loops each row and appends therows to the new array, formatting
-  Last-time column(locale format) and the last column is the height.
-- Line 56 prints the results
-- In the end 58-60 closes the connection with the database
+- Line 4-17 is the SQL query to run.
+- Line 18 is to make a connection with the demo database.
+- Line 20-25 is to set a header to the dataframe and name the columns.
+- Line 26-27 take dynamic input of pressure.
+- Line 29 calculates the height of the corresponding value of pressure signal.
+- Line 30-32 iterates through each row, and replaces the pressure signals with
+  height.
+- Line 34-38 prints the results, formatting
+  Last-time column(locale format) and the last column to
+  height.
 
 [View on GitHub.com](https://github.com/TOKU-Systems/tutorials/blob/develop/docs/hydrostatic-pressure/hydrostatic_pressure.py)
 
