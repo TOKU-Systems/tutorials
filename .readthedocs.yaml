@@ -3,3 +3,10 @@ version: 2
 mkdocs:
   configuration: mkdocs.yml
   fail_on_warning: false
+
+  python:
+  install:
+    - requirements: requirements.txt
+    - method: pip
+      path: .
+  system_packages: true
