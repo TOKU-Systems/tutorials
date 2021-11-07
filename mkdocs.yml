@@ -1,7 +1,7 @@
 site_name: API-SQL tutorials
 copyright: "Copyright &copy; 2021 TOKU Industry Inc."
 theme:
-  name: mkdocs
+  name: material
   features:
     - navigation.indexes
 markdown_extensions:
