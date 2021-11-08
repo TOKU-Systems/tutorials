@@ -29,7 +29,7 @@ To install on Windows, follow these steps
 
 1. Setup [pyenv-win](https://github.com/pyenv-win/pyenv-win)
 
-### Getting files from GitHub
+## Getting files from GitHub
 
 1. Clone the repository 'tutorials' from [GitHub](https://github.com/TOKU-Systems/tutorials)
 
@@ -128,7 +128,7 @@ available databases.
   <img width="460" height="300" src="https://raw.githubusercontent.com/TOKU-Systems/tutorials/develop/docs/pic/ER%20Diagram.png">
 </p>
 
-### Optional tools
+## Optional tools
 
 1. Install [pgadmin](https://www.pgadmin.org/download/)
     - It is a GUI tool used to link (remote and locally) to PostgreSQL database.
