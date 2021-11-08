@@ -125,7 +125,7 @@ available databases.
 - The following is the ER diagram of the tables in the database.
 
 <p align="center">
-  <img width="460" height="300" src="https://raw.githubusercontent.com/TOKU-Systems/tutorials/develop/docs/pic/Latest-readings-code.png">
+  <img width="460" height="300" src="https://raw.githubusercontent.com/TOKU-Systems/tutorials/develop/docs/pic/ER%20Diagram.png">
 </p>
 
 ### Optional tools
