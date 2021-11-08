@@ -64,17 +64,21 @@ To install on Windows, follow these steps
 
 1. Navigate to the file that is to be executed.
 
-- For example (on macOS), consider hydrostatic pressure file
+    - For example, consider hydrostatic pressure file
 
-    `cd tutorials/docs/hydrostatic-pressure/hydrostatic_pressure.py`
+        `cd tutorials/docs/hydrostatic-pressure/hydrostatic_pressure.py`
 
-1. Run the file.
+1. On macOS, run the file using
 
-    `python hydrostatic_pressure.py`
+    ```sh
+        python hydrostatic_pressure.py
+    ```
 
-- On Windows, run the file
+    - On Windows, run the file using
 
-    `py hydrostatic_pressure.py`
+        ```sh
+            py hydrostatic_pressure.py
+        ```
 
 1. The example should print results similar to the following
 
@@ -84,32 +88,45 @@ To install on Windows, follow these steps
 
 ## Connection to Database using pandas
 
-1. To connect to the database, install a package called 'psycopg2'
+1. To connect to the database, install a package called [pyscopg2](https://www.psycopg.org/docs/)
 
     ```sh
     pip install pyscopg2
     ```
 
-1. Below is an example of running a query to get the latest signal values
+1. Below is an example of a tutorial to get the latest signal values
 
 <p align="center">
-  <img width="460" height="300" src="https://raw.githubusercontent.com/TOKU-Systems/tutorials/develop/docs/pic/Screen%20Shot%202021-09-14%20at%208.01.22%20AM.png">
+  <img width="460" height="300" src="https://raw.githubusercontent.com/TOKU-Systems/tutorials/develop/docs/pic/Latest-readings-code.png">
 </p>
 
 - Line 1 imports the pandas package.
-- Line 4-14 is the SQL query to be executed to get collect the required tabled
-from the database and the desired results.
-- Line 3 enables us to read the query and fetch the results into a dataframe
+- Line 4-14 is the SQL query to be executed which collects the required tables
+from the database.
+- Line 3 enables to read the query and fetch the results into a dataframe
 using pandas.
-- Line 15 is the connection to the appropriate database and is constructed as following:
+- Line 15 is the connection to the appropriate database and is constructed as follows:
+
+1. In order to setup a connection we need the username/password of the database and construct it. In this example, our conection string is
+
+    `postgresql://data_viewer:tokuapidemosystems@apidemo.tokusystems.com/new_mareland`
+
+1. This can be interpreted as:
+
     - `postgresql://` is the scheme which indicates the database technology.
-    - `data_viewer` is the user name of the database
+    - `data_viewer` is the user name of the database.
     - `tokuapidemosystems` is the password of the database.
     - `apidemo.tokusystems.com` is the database host.
-    - `new_mareland` is the name of the target database
+    - `new_mareland` is the name of the target database.
 
-- This is specific to the example considered, connection can be made with any
-available databases and for any of the above information needed please contact [TOKU-Systems-Help-desk](https://www.tokusystems.com/contact/)
+- This is excluse to the example considered, connection can be made with any
+available databases.
+- For any of the above information needed, please contact [TOKU-Systems-Help-desk](https://www.tokusystems.com/contact/)
+- The following is the ER diagram of the tables in the database.
+
+<p align="center">
+  <img width="460" height="300" src="https://raw.githubusercontent.com/TOKU-Systems/tutorials/develop/docs/pic/Latest-readings-code.png">
+</p>
 
 ### Optional tools
 
