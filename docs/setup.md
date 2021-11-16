@@ -86,7 +86,7 @@ To install on Windows, follow these steps
   <img width="460" height="300" src="https://raw.githubusercontent.com/TOKU-Systems/tutorials/develop/docs/pic/Screen%20Shot%202021-09-14%20at%208.01.22%20AM.png">
 </p>
 
-## Connection to Database using pandas
+## Using pandas with database
 
 1. To connect to the database, install a package called [pyscopg2](https://www.psycopg.org/docs/)
 
@@ -94,24 +94,15 @@ To install on Windows, follow these steps
     pip install pyscopg2
     ```
 
-1. Below is an example of a tutorial to get the latest signal values
+- Refer to the [pandas documentation](https://pandas.pydata.org/docs/reference/api/pandas.read_sql.html)
 
-<p align="center">
-  <img width="460" height="300" src="https://raw.githubusercontent.com/TOKU-Systems/tutorials/develop/docs/pic/Latest-readings-code.png">
-</p>
+- Follow the instructions below to build the connection URL
 
-- Line 1 imports the pandas package.
-- Line 4-14 is the SQL query to be executed which collects the required tables
-from the database.
-- Line 3 enables to read the query and fetch the results into a dataframe
-using pandas.
-- Line 15 is the connection to the appropriate database and is constructed as follows:
-
-1. In order to setup a connection we need the username/password of the database and construct it. In this example, our conection string is
+1. In order to setup a connection we need the username/password of the database and construct it. For example, consider the conection URL
 
     `postgresql://data_viewer:tokuapidemosystems@apidemo.tokusystems.com/new_mareland`
 
-1. This can be interpreted as:
+1. The connection URL consists of:
 
     - `postgresql://` is the scheme which indicates the database technology.
     - `data_viewer` is the user name of the database.
@@ -119,14 +110,9 @@ using pandas.
     - `apidemo.tokusystems.com` is the database host.
     - `new_mareland` is the name of the target database.
 
-- This is excluse to the example considered, connection can be made with any
-available databases.
-- For any of the above information needed, please contact [TOKU-Systems-Help-desk](https://www.tokusystems.com/contact/)
-- The following is the ER diagram of the tables in the database.
+- Report any issues to [GitHub Repo](https://github.com/TOKU-Systems/tutorials/issues)
 
-<p align="center">
-  <img width="460" height="300" src="https://raw.githubusercontent.com/TOKU-Systems/tutorials/develop/docs/pic/ER%20Diagram.png">
-</p>
+- Refer to the [ER Diagram](https://illumass-sdk.readthedocs.io/en/develop/api-sql/er-diagram/)
 
 ## Optional tools
 
