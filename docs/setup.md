@@ -94,25 +94,26 @@ To install on Windows, follow these steps
     pip install pyscopg2
     ```
 
-- Refer to the [pandas documentation](https://pandas.pydata.org/docs/reference/api/pandas.read_sql.html)
+    - Refer to the [pandas documentation](https://pandas.pydata.org/docs/reference/api/pandas.read_sql.html)
 
-- Follow the instructions below to build the connection URL
+1. Follow the instructions below to build the connection URL
 
-1. In order to setup a connection we need the username/password of the database and construct it. For example, consider the conection URL
+    - In order to setup a connection we need the username/password of the database
+    and construct it. For example, consider the conection URL
 
     `postgresql://data_viewer:tokuapidemosystems@apidemo.tokusystems.com/new_mareland`
 
-1. The connection URL consists of:
+    - The connection URL consists of:
 
-    - `postgresql://` is the scheme which indicates the database technology.
-    - `data_viewer` is the user name of the database.
-    - `tokuapidemosystems` is the password of the database.
-    - `apidemo.tokusystems.com` is the database host.
-    - `new_mareland` is the name of the target database.
+        - `postgresql://` is the scheme which indicates the database technology.
+        - `data_viewer` is the user name of the database.
+        - `tokuapidemosystems` is the password of the database.
+        - `apidemo.tokusystems.com` is the database host.
+        - `new_mareland` is the name of the target database.
 
-- Report any issues to [GitHub Repo](https://github.com/TOKU-Systems/tutorials/issues)
+1. Report any issues to [GitHub Repo](https://github.com/TOKU-Systems/tutorials/issues)
 
-- Refer to the [ER Diagram](https://illumass-sdk.readthedocs.io/en/develop/api-sql/er-diagram/)
+1. Refer to the [ER Diagram](https://illumass-sdk.readthedocs.io/en/develop/api-sql/er-diagram/)
 
 ## Optional tools
 
